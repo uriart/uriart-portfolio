@@ -1,15 +1,15 @@
 <section id="home" class="h-screen bg-no-repeat bg-cover bg-fixed bg-image-home justify-center items-center flex">
   <div class="xl:flex items-center">
-    <div class="h-80 w-80 rounded-full bg-photo bg-cover xl:mr-7 mb-7"></div>
-    <div class="text-center text-white text-xl">
-      <h1>URIART</h1>
-      <p>SOFTWARE DEVELOPER</p>
+    <div class="h-72 w-72 rounded-full bg-photo bg-cover xl:mr-7 mb-7"></div>
+    <div class="text-center backdrop-blur-xs bg-white/10 rounded-3xl p-5">
+      <h1 class="font-bold text-8xl text-green-600">Uriart</h1>
+      <p class="text-white text-3xl tracking-wide">Software Developer</p>
     </div>
   </div>
 </section>
 
-<section id="about" class="max-w-6xl m-auto xl:h-screen px-5">
-  <h1 class="mt-14 text-3xl">About me</h1>
+<section id="about" class="max-w-6xl m-auto py-5">
+  <h1 class="mt-14 text-3xl font-bold">About me</h1>
   <div class="xl:flex lg:flex text-2xl">
     <div class="xl:max-w-xl lg:max-w-xl py-10 xl:pr-20 lg:pr-20">
       <h1>I'm Oriol Artes software developer</h1>
@@ -19,47 +19,49 @@
         Titulado con el grado superior en Telecomunicaciones e Informática. Con conocimientos y experiencia en administración de sistemas informáticos en red.
       </p>
       <br>
-      <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-        <span>Download CV</span>
-      </button>
+      <div class="w-full flex justify-center">
+        <button class="hover:bg-gray-300 bg-green-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+          <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+          <span>Download CV</span>
+        </button>
+      </div>
     </div>
     <div class="xl:max-w-xl lg:max-w-xl m-auto py-10">
       <h1>Skills</h1>
-      <div class="grid grid-cols-3 text-base place-items-center">
-        <div class="m-5 h-32 w-32 text-center">
+      <div class="grid grid-cols-3 text-base place-items-center max-w-md m-auto">
+        <div class="m-5 h-28 w-28 text-center">
           <img src="/assets/html.png" alt="html" class="h-full m-auto">
           <p>Html</p>
         </div>
-        <div class="m-5 h-32 w-32 text-center">
+        <div class="m-5 h-28 w-28 text-center">
           <img src="/assets/css.png" alt="css" class="h-full m-auto">
           <p>Css</p>
         </div>
-        <div class="m-5 h-32 w-32 text-center">
+        <div class="m-5 h-28 w-28 text-center">
           <img src="/assets/javascript.png" alt="javascript" class="h-full m-auto">
           <p>JavaScript</p>
         </div>
-        <div class="m-5 h-32 w-32 text-center">
+        <div class="m-5 h-28 w-28 text-center">
           <img src="/assets/java.png" alt="java" class="h-full m-auto">
           <p>Java</p>
         </div>
-        <div class="m-5 h-32 w-32 text-center">
+        <div class="m-5 h-28 w-28 text-center">
           <img src="/assets/spring.png" alt="spring" class="h-full m-auto">
           <p>Spring</p>
         </div>
-        <div class="m-5 h-32 w-32 text-center">
+        <div class="m-5 h-28 w-28 text-center">
           <img src="/assets/jsp.png" alt="jsp" class="h-full m-auto">
           <p>Jsp</p>
         </div>
-        <div class="m-5 h-32 w-32 text-center">
+        <div class="m-5 h-28 w-28 text-center">
           <img src="/assets/angular.png" alt="angular" class="h-full m-auto">
           <p>Angular</p>
         </div>
-        <div class="m-5 h-32 w-32 text-center">
+        <div class="m-5 h-28 w-28 text-center">
           <img src="/assets/git.png" alt="git" class="h-full m-auto">
           <p>Git</p>
         </div>
-        <div class="m-5 h-32 w-32 text-center">
+        <div class="m-5 h-28 w-28 text-center">
           <img src="/assets/github.png" alt="github" class="h-full m-auto">
           <p>GitHub</p>
         </div>
@@ -68,14 +70,11 @@
   </div>
 </section>
 
-<section id="portfolio" class="max-w-6xl m-auto xl:h-screen">
-
-  <h1 class="mt-14 mb-5 text-3xl">Portfolio</h1>
+<section id="portfolio" class="max-w-6xl m-auto">
+  <h1 class="mt-14 mb-5 text-3xl font-bold">Portfolio</h1>
   <h1>This are some projects I made and some I'm currently working.</h1>
   <br>
-
   <div class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 text-base">
-    
     <div class="relative h-60 w-11/12 bg-slate-200 rounded-3xl mb-10 group overflow-hidden m-auto drop-shadow-2xl">
       <img src="/assets/entrenapp.png" alt="entrenApp" class="p-2 my-14 group-hover:scale-110 group-hover:ease-in duration-300">
       <div class="absolute bg-darkness rounded-3xl top-0 left-0 w-full h-full justify-center items-center flex flex-wrap flex-col
@@ -105,7 +104,6 @@
         </div>     
       </div>
     </div>
-
     <div class="relative h-60 w-11/12 bg-slate-200 rounded-3xl mb-10 group overflow-hidden m-auto drop-shadow-2xl">
       <img src="/assets/notes.png" alt="listapp-ionic" class="h-full m-auto p-2 group-hover:scale-110 group-hover:ease-in duration-300">
       <div class="absolute bg-darkness rounded-3xl top-0 left-0 w-full h-full justify-center items-center flex flex-wrap flex-col
@@ -123,7 +121,6 @@
         </div>   
       </div>
     </div>
-
     <div class="relative h-60 w-11/12 bg-slate-200 rounded-3xl mb-10 group overflow-hidden m-auto drop-shadow-2xl">
       <img src="/assets/profile-photo.jpg" alt="portfolio-uriart" class="rounded-full h-full m-auto p-2 group-hover:scale-110 group-hover:ease-in duration-300">
       <div class="absolute bg-darkness rounded-3xl top-0 left-0 w-full h-full justify-center items-center flex flex-wrap flex-col
@@ -141,7 +138,6 @@
         </div>   
       </div>
     </div>
-
     <div class="relative h-60 w-11/12 bg-slate-200 rounded-3xl mb-10 group overflow-hidden m-auto drop-shadow-2xl">
       <img src="/assets/avengers.png" alt="heroesApp" class="h-full m-auto p-2 group-hover:scale-110 group-hover:ease-in duration-300">
       <div class="absolute bg-darkness rounded-3xl top-0 left-0 w-full h-full justify-center items-center flex flex-wrap flex-col
@@ -159,7 +155,6 @@
         </div>   
       </div>
     </div>
-
     <div class="relative h-60 w-11/12 bg-slate-200 rounded-3xl mb-10 group overflow-hidden m-auto drop-shadow-2xl">
       <img src="/assets/heroes-crud.png" alt="heroes-crud" class="mt-10 p-2 group-hover:scale-110 group-hover:ease-in duration-300">
       <div class="absolute bg-darkness rounded-3xl top-0 left-0 w-full h-full justify-center items-center flex flex-wrap flex-col
@@ -177,7 +172,6 @@
         </div>   
       </div>
     </div>
-
     <div class="relative h-60 w-11/12 bg-slate-200 rounded-3xl mb-10 group overflow-hidden m-auto drop-shadow-2xl">
       <img src="/assets/dark-theme.png" alt="dark-theme" class="mt-10 p-2 group-hover:scale-110 group-hover:ease-in duration-300">
       <div class="absolute bg-darkness rounded-3xl top-0 left-0 w-full h-full justify-center items-center flex flex-wrap flex-col
@@ -195,7 +189,31 @@
         </div>   
       </div>
     </div>
-
   </div>
+</section>
 
+<section id="contact" class="max-w-6xl m-auto">
+  <h1 class="mt-14 mb-5 text-3xl font-bold">Contact</h1>
+  <h1>Contact me by...</h1>
+  <br>
+  <div class="flex justify-between"> 
+    <div class="m-auto text-center hover:rotate-12">
+      <a href="mailto:oriol.artes@gmail.com">
+        <img src="/assets/gmail.png" alt="gmail" class="m-auto h-14">
+        <p>Gmail</p>
+      </a>
+    </div> 
+    <div class="m-auto text-center hover:rotate-12">
+      <a href="https://www.linkedin.com/in/oriol-artes/" target="_blank">
+        <img src="/assets/linkedin.png" alt="linkedin" class="m-auto h-14">
+        <p>Linkedin</p>
+      </a>
+    </div> 
+    <div class="m-auto text-center hover:rotate-12">
+      <a href="https://github.com/uriart" target="_blank">
+        <img src="/assets/github.png" alt="github" class="m-auto h-14">
+        <p>GitHub</p>
+      </a>
+    </div> 
+  </div>
 </section>
