@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'image-home': "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/assets/bg-image.png')",
+        'image-header': "linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))",
         'photo': "url('/assets/profile-photo.jpg')",
         'darkness': "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))",
       },
