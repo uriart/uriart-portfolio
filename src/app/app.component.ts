@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   observer: any;
   
   ngOnInit() {
+    AOS.init()
     this.intersectionObserver();
   }
 
@@ -23,7 +25,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   intersectionObserver() {
     let options = {
       rootMargin: '0px',
-      threshold: 0.6,
+      threshold: [0.6, 0.6]
     };
 
     this.observer = new IntersectionObserver((entries) => {
@@ -57,8 +59,8 @@ export class AppComponent implements OnInit, AfterViewInit{
   menuOpacityHandler(id:string) {
     const navbar = document.querySelector("nav");
     if(id == 'home')
-      navbar?.classList.remove('bg-image-header');
+      navbar?.classList.remove('xl:bg-image-header');
     else
-      navbar?.classList.add('bg-image-header');
+      navbar?.classList.add('xl:bg-image-header');
   }
 }

@@ -1,37 +1,33 @@
-<nav class="fixed text-white flex justify-center w-screen items-center py-4 bg-no-repeat bg-cover bg-fixed z-50">
+<nav class="fixed text-white justify-center w-screen items-center py-4 bg-no-repeat bg-cover bg-fixed z-50 hidden xl:flex">
   <div class="justify-between flex max-w-6xl w-screen">
     <div>
-      <div>
-        <p class="text-green-600 font-bold text-xl">>uriart_</p>
-      </div>
+      <p class="text-green-600 font-bold text-xl">>uriart_</p>
     </div>
     <div>
-      <div>
-        <ul class="flex">
-          <li class="ml-5 hover:text-green-600" data-ref="home"><a href="#home">Home</a></li>
-          <li class="ml-5 hover:text-green-600" data-ref="about"><a href="#about">About</a></li>
-          <li class="ml-5 hover:text-green-600" data-ref="portfolio"><a href="#portfolio">Portfolio</a></li>
-          <li class="ml-5 hover:text-green-600" data-ref="contact"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="flex">
+        <li class="ml-5 hover:text-green-600" data-ref="home"><a href="#home">Home</a></li>
+        <li class="ml-5 hover:text-green-600" data-ref="about"><a href="#about">About</a></li>
+        <li class="ml-5 hover:text-green-600" data-ref="portfolio"><a href="#portfolio">Portfolio</a></li>
+        <li class="ml-5 hover:text-green-600" data-ref="contact"><a href="#contact">Contact</a></li>
+      </ul>
     </div>
   </div>
 </nav>
 
 <section id="home" class="h-screen bg-no-repeat bg-cover bg-fixed bg-image-home justify-center items-center flex">
-  <div class="xl:flex items-center">
-    <div class="h-72 w-72 rounded-full bg-photo bg-cover xl:mr-7 mb-7 m-auto"></div>
+  <div class="xl:flex items-center" data-aos="fade-up" data-aos-duration="3000">
+    <div class="xl:h-72 xl:w-72 w-56 h-56 rounded-full bg-photo bg-cover xl:mr-7 mb-7 m-auto"></div>
     <div class="text-center backdrop-blur-xs bg-white/10 rounded-3xl p-5">
-      <h1 class="font-bold text-8xl text-green-600">Uriart</h1>
-      <p class="text-white text-3xl tracking-wide">Software Developer</p>
+      <h1 class="font-bold text-7xl xl:text-8xl text-green-600">Uriart</h1>
+      <p class="text-white text-2xl xl:text-3xl tracking-wide">Software Developer</p>
     </div>
   </div>
 </section>
 
 <section id="about" class="max-w-6xl m-auto my-20 px-4">
-  <h1 class="text-3xl font-bold">>About me<span class="animate-wiggle">_</span></h1>
+  <h1 class="text-3xl font-bold" data-aos="fade-up">>About me<span class="animate-wiggle">_</span></h1>
   <div class="xl:flex lg:flex">
-    <div class="xl:max-w-xl lg:max-w-xl py-10 xl:pr-20 lg:pr-20 leading-10 tracking-wide">
+    <div class="xl:max-w-xl lg:max-w-xl py-10 xl:pr-20 lg:pr-20 leading-10 tracking-wide" data-aos="fade-up" data-aos-duration="1500">
       <h1 class="text-xl font-bold">Hi I'm Oriol Artés, Software Developer</h1>
       <br>
       <p>I'm a Full Stack software developer with experience building Java Spring applications both front and back sides.</p>
@@ -46,7 +42,7 @@
         </a>
       </div>
     </div>
-    <div class="xl:max-w-xl lg:max-w-xl py-10 mx-auto">
+    <div class="xl:max-w-xl lg:max-w-xl py-10 mx-auto" data-aos="fade-up" data-aos-duration="1500">
       <h1 class="text-xl font-bold">Skills</h1>
       <div class="grid grid-cols-3 text-base place-items-center max-w-md m-auto">
         <div class="m-5 h-28 w-28 text-center">
@@ -91,11 +87,11 @@
 </section>
 
 <section id="portfolio" class="max-w-6xl m-auto my-20 px-4">
-  <h1 class="text-3xl font-bold">>Portfolio<span class="animate-wiggle">_</span></h1>
+  <h1 class="text-3xl font-bold" data-aos="fade-up">>Portfolio<span class="animate-wiggle">_</span></h1>
   <br>
-  <h1>This are some projects I made and some I'm currently working.</h1>
+  <h1 data-aos="fade-up">This are some projects I made and some I'm currently working.</h1>
   <br>
-  <div class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 text-base mt-10">
+  <div class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 text-base mt-10" data-aos="fade-up">
     <div class="relative h-60 w-11/12 bg-slate-200 rounded-3xl mb-10 group overflow-hidden m-auto drop-shadow-2xl">
       <img src="/assets/entrenapp.png" alt="entrenApp" class="p-2 my-14 group-hover:scale-110 group-hover:ease-in duration-300">
       <div class="absolute bg-darkness rounded-3xl top-0 left-0 w-full h-full justify-center items-center flex flex-wrap flex-col
@@ -148,7 +144,7 @@
                   opacity-0 group-hover:opacity-100 group-hover:ease-in duration-300">
         <p class="text-white decoration-solid mb-8">This portfolio</p>
         <div class="grid grid-cols-2 text-base place-items-center">
-          <a type="button" href="https://www.uriart.vercel.com/" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30">
+          <a type="button" href="#" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30">
             <svg class="w-4 h-4 mr-2 -ml-1" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="butt" stroke-linejoin="bevel"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
             Live
           </a>
@@ -214,10 +210,10 @@
 </section>
 
 <section id="contact" class="max-w-6xl m-auto my-20 px-4">
-  <h1 class="mb-5 text-3xl font-bold">>Contact<span class="animate-wiggle">_</span></h1>
-  <h1>Contact me by...</h1>
+  <h1 class="mb-5 text-3xl font-bold" data-aos="fade-up">>Contact<span class="animate-wiggle">_</span></h1>
+  <h1 data-aos="fade-up">Contact me by...</h1>
   <br>
-  <div class="flex justify-between mt-14"> 
+  <div class="flex justify-between mt-14" data-aos="fade-up"> 
     <div class="m-auto text-center hover:rotate-12">
       <a href="mailto:oriol.artes@gmail.com">
         <img src="/assets/gmail.png" alt="gmail" class="m-auto h-14">
